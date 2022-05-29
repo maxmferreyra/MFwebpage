@@ -24,12 +24,12 @@ body {
 
 
 nav {
+    height: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     text-align: center;
-    padding-top: 30px ;
 }
 
 nav a {
@@ -63,25 +63,28 @@ main {
 }
 
 .title-container {
-    width: 80%;
+    background-color: #53a7ea;
+    width: 100%;
     margin: 0px auto;
     height: 420px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .title-container img {
-    width: 45%;
-    height: 35vh;
+    margin-top: 30px;
+    width: 42%;
+    height: 40vh;
     border-radius: 50% 50% 49% 51% / 60% 34% 66% 40% ;
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.7px);
     -webkit-backdrop-filter: blur(2.7px);
 }
+
 
 
 h1 {
@@ -129,24 +132,32 @@ h1 span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 60px auto 0px auto;
-    }
-
-
-.hello {
-    text-align: center;
-    font-size: 26px;
-    font-weight: bold;
-    padding: 20px;
-    color: #f7444e;
+    margin: 40px auto 0px auto;
 }
 
-.description {
-    color: #f7f8f3;
-    font-size: 14px;
-    line-height: 26px;
-    padding: 0px 50px 40px 50px;
-    text-align: center;
+.hobbie {
+    width: 70%;
+    height: 14vh;
+    border: 2px solid #53a6eac9;
+    margin: 5px 0px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hobbie img {
+    width: 17%;
+    height: 10vh; 
+     border-radius: 50px 0px 0px 50px;
+     margin: 5px;
+     padding: 4px;
+}
+
+.hobbie p {
+    color: white;
+    font-size: 15px;
+    padding-left: 25px;
 }
 
 .tools-container {
@@ -359,11 +370,15 @@ footer p span {
         background-color: #002c3e;
     } 
 
+    header {
+        height: 40px;
+    }
+
     nav {
         display: flex;
         justify-content: center;
-        height: 40px;
     }
+
 
     nav button::before {
         content: "";
@@ -386,22 +401,22 @@ footer p span {
         width: 100%;
         flex-direction: row-reverse;
         justify-content: center;
-        flex-wrap: wrap;
-        margin: 40px 0px;    
-        height: 85vh; 
-    } 
+        flex-wrap: wrap;    
+        height: 90vh;
+        margin-top: 25px; 
+    }
+    
+    .title-container span {
+        font-size: 60px;
+    }
 
     .title-container img {
-        margin: 20px 0px 0px 0px;
         width: 25%;
         height: 60vh;
-        margin-top: 25px;
-      
-        right: 40px;
+        margin: 0px;
     }
     
     h1 {
-        left: 40px;
         width: 40%;
         margin: 0px; 
         font-size: 40px;
@@ -417,25 +432,19 @@ footer p span {
         transform: translateX(3px);
     }
 
-
-    .about-me {
-        background-image: url('./public/images/Colored\ Shapes (2).svg');
-        width: 100%;
-        height: 100vh;
+    .hobbie {
+        width: 50%;
+        height: 13vh;
     }
-
-    .about-me .hello {
-        font-size: 32px;
+    
+    .hobbie img {
+        width: 12%;
+        height: 12vh;
     }
-
-    .about-me .description {
-        width: 75%;
-        margin: 0 auto;
-        background-color: #53a6eaad;
-        border-radius: 40px;
-        font-size: 20px;
-        line-height: 34px;
-        padding: 10px 10px;
+    
+    .hobbie p {
+        font-size: 18px;
+        padding-left: 45px;
     }
 
 
@@ -447,10 +456,8 @@ footer p span {
         height: 70vh;
     }
 
-    .card-tool {
-        width: 300px;
-        margin: 30px 40px;
-        height: 300px;
+    .cardTool {
+        width: 40%;
     }
 
      h3 {
