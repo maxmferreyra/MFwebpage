@@ -39,18 +39,27 @@ nav {
 }
 
 nav a {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: #f7f8f3;
     margin: 0px 15px;
     text-transform: uppercase;
 }
 
-nav a:hover {
+nav button {
+    width: 140px;
+    height: 30px;
     cursor: pointer;
-}
-
-
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+    font-family: 'Rubik', sans-serif;
+   }
 
 main {
     display: flex;
@@ -172,6 +181,10 @@ h3 {
     transition: transform 1s ease-out;
 }
 
+.proyects-container {
+    margin-bottom: 35px;
+}
+
 .proyect {
     width: 380px;
     height: 600px;
@@ -181,6 +194,7 @@ h3 {
     justify-content: center;
     align-items: center;
     transition: transform 1s ease-out;
+    margin-bottom: 20px;
 }
 
 
@@ -246,7 +260,7 @@ h3 {
     transition: all 0.3s ease;
    }
    
-   .cta span {
+   .cta a {
     position: relative;
     font-family: "Ubuntu", sans-serif;
     font-size: 14px;
@@ -337,6 +351,24 @@ footer p span {
         height: 50px;
     }
 
+    nav button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background-color: #f7444e;
+        z-index: -1;
+        transition: all 0.5s;
+        border-radius: 10px;
+       }
+       
+       nav button:hover::before {
+        width: 100%;
+       }
+
+
     .title-container {
         margin-bottom: 80px;
         height: 550px;
@@ -404,7 +436,6 @@ footer p span {
        display: flex;
        justify-content: space-evenly;
        align-items: center;
-       margin-bottom: 25px;  
     }
 
     .proyect {
@@ -429,6 +460,10 @@ footer p span {
 
     .proyect-info h3 {
         padding: 10px;
+    }
+
+    .cta {
+        cursor: pointer;
     }
 
     footer {
