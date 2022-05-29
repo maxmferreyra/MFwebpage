@@ -22,25 +22,21 @@ body {
     max-width: 480px;
 } 
 
-header {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    margin-top: 35px;
     text-align: center;
-    display: none;
+    padding-top: 30px ;
 }
 
 nav a {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     color: #f7f8f3;
-    margin: 0px 15px;
+    margin: 0px 10px;
     text-transform: uppercase;
 }
 
@@ -79,7 +75,7 @@ main {
 
 .title-container img {
     width: 45%;
-    height: 40vh;
+    height: 35vh;
     border-radius: 50% 50% 49% 51% / 60% 34% 66% 40% ;
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -94,19 +90,22 @@ h1 {
     font-weight: 700;
     margin-top: 30px;
     text-align: center;
+ 
 }
 
 .button-container {
     cursor: pointer;
-    height: 35px;
+    height: 45px;
     background-color: #002c3e;
     border: 2px solid #f7444e;
     border-radius: 12px;
     font-weight: bold;
     font-family: 'Rubik', sans-serif;
     font-size: 13px;
-    width: 60%;
+    width: 50%;
     margin-top: 30px;
+    display: none;
+
 }
 
 .button-container a {
@@ -119,6 +118,7 @@ h1 {
 
 h1 span {
     color: #f7444e;
+    font-size: 26px;
     text-transform: uppercase;
     margin-right: 10px;
 }
