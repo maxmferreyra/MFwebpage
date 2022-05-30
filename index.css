@@ -138,7 +138,7 @@ h1 span {
 
 .hobbie {
     width: 70%;
-    height: 14vh;
+    height: 12vh;
     border: 2px solid #53a6eac9;
     margin: 5px 0px;
     border-radius: 50px;
@@ -157,7 +157,7 @@ h1 span {
 
 .hobbie p {
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     padding-left: 25px;
 }
 
