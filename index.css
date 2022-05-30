@@ -435,11 +435,6 @@ footer p span {
         width: 100%;
        }
 
-       .container-background {
-           border: 1px solid white;
-
-       }
-
     .title-container {
         width: 100%;
         flex-direction: row-reverse;
