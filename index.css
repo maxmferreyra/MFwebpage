@@ -6,7 +6,6 @@
     text-decoration: none;
     outline: 0;
     font-size: inherit;
-    color: black;
     list-style: none;
 }
 
@@ -23,6 +22,14 @@ body {
 } 
 
 
+/* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    margin: 0px 25px 0px 20px;
+}
+
 nav {
     height: 60px;
     display: flex;
@@ -30,30 +37,109 @@ nav {
     align-items: center;
     width: 100%;
     text-align: center;
+} */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
 }
 
-nav a {
-    font-size: 12px;
-    font-weight: 500;
-    color: #f7f8f3;
-    margin: 0px 10px;
-    text-transform: uppercase;
-}
-
-nav button {
-    width: 140px;
-    height: 30px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: transparent;
-    color: white;
-    font-weight: 700;
+label {
     position: relative;
-    transition: all 0.5s;
+    height: 20px;
+    width: 50px;
+    display: block;
+    cursor: pointer;
+    margin-top: 9px;
+}
+
+.icon-menu,
+.icon-menu::before,
+.icon-menu::after {
+    content: '';
+    width: 20px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    box-shadow: 0px 6px 7px -3px rgb(117 117 117 / 54%);
+}
+
+.icon-menu::after {
+    top: 10px;
+}
+
+.icon-menu::before {
+    top: 5px;
+}
+
+.menu-nav {
+    background-color: #002c3e;
+    height: 0px;
+    transition: all 0.4s ease-in-out 0s;
+    overflow: hidden;
+    position: absolute;
+    top: 51px;
+    left: 0;
     z-index: 1;
-    font-family: 'Rubik', sans-serif;
+}
+
+.check {
+    display: none;
+}
+
+.check:checked ~ label > div {
+    transform: translateY(10px) rotate(45deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.check:checked ~ label > div::before {
+    transform: translateY(-5px) rotate(90deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.check:checked ~ label > div::after {
+    opacity: 0;
+    transform: translateY(-10px) rotate(90deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.check:checked~.menu-nav {
+    height: 145px;
+    width: 100%;
+}
+
+.list-item {
+ width: 100%;
+ height: 45px;
+ font-size: 20px;
+ cursor: pointer;
+ border-bottom: 1px solid #2CA0D9;
+ outline: none;
+ padding: 10px 0px 10px 25px;
+ margin-top: 3px;
+}
+
+.list-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s;
    }
+
+.list-item a {
+    color: white;
+    font-size: 13px;
+}
+
 
 main {
     display: flex;
@@ -67,7 +153,7 @@ main {
     background-color: #53a7ea;
     width: 100%;
     margin: 0px auto;
-    height: 420px;
+    height: 520px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -76,55 +162,27 @@ main {
 }
 
 .title-container img {
-    margin-top: 30px;
+    margin-top: 40px;
     width: 43%;
-    height: 38vh;
+    height: 40vh;
     border-radius: 50% 50% 49% 51% / 60% 34% 66% 40% ;
     background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.7px);
-    -webkit-backdrop-filter: blur(2.7px);
 }
-
-
 
 h1 {
     color: #f7f8f3;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     margin-top: 30px;
     text-align: center;
- 
+    width: 80%;
 }
 
-.button-container {
-    cursor: pointer;
-    height: 45px;
-    background-color: #002c3e;
-    border: 2px solid #f7444e;
-    border-radius: 12px;
-    font-weight: bold;
-    font-family: 'Rubik', sans-serif;
-    font-size: 13px;
-    width: 50%;
-    margin-top: 30px;
-    display: none;
-
-}
-
-.button-container a {
-    color: #ffffff;
-}
-
-h1 {
-    font-size: 20px;
-}
-
-h1 span {
-    color: #f7444e;
-    font-size: 26px;
+.title-container span {
+    color: #002c3e;
+    font-size: 30px;
+    font-weight: 600;
     text-transform: uppercase;
-    margin-right: 10px;
 }
 
 .about-me {
@@ -288,7 +346,6 @@ h3 {
    
    .cta a {
     position: relative;
-    font-family: "Ubuntu", sans-serif;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.05em;
@@ -302,7 +359,7 @@ h3 {
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke: #234567;
+    stroke: #ffffff;
     stroke-width: 2;
     transform: translateX(-5px);
     transition: all 0.3s ease;
@@ -386,6 +443,7 @@ footer p span {
     color: #2CA0D9;
     width: 1.1rem;
     height: 1.1rem;
+    margin-top: 0.3em;
    }
 
    .button:hover {
@@ -408,17 +466,60 @@ footer p span {
 
 
 @media screen and (min-width: 960px) {
+    
     body {
         max-width: 1328px;
         background-color: #002c3e;
-    } 
-
-    nav {
-        display: flex;
-        justify-content: center;
     }
 
-    nav button::before {
+    .header {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .check,
+    label,
+    .icon-menu {
+        display: none;
+    }
+    
+    .menu-nav {
+        width: 35%;
+        margin-top: 0px;
+        position: initial;
+        height: 100%;
+        right: 0;
+        transition: none;
+    }
+
+    .menu-nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .list-item {
+     height: 35px;
+     font-size: 20px;
+     cursor: pointer;
+     padding: 5px 0px;
+     background-color: transparent;
+    color: white;
+    border: none;
+    font-weight: 400;
+    position: relative;
+    transition: all 0.5s;
+    margin-right: 10px;
+    border-radius: 20px;
+    }
+
+    .list-item a {
+        padding-left: 15px;
+    }
+
+    .list-item::before {
         content: "";
         position: absolute;
         top: 0;
@@ -429,19 +530,23 @@ footer p span {
         z-index: -1;
         transition: all 0.5s;
         border-radius: 10px;
-       }
-       
-    nav button:hover::before {
+    }
+
+    .list-item:hover::before {
         width: 100%;
+       }
+
+
+    .list-item:active:before {
+        background: #b9b9b9;
        }
 
     .title-container {
         width: 100%;
         flex-direction: row-reverse;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;    
         height: 90vh;
-        
     }
     
     .title-container span {
@@ -453,17 +558,14 @@ footer p span {
         width: 25%;
         height: 60vh;
         margin: 0px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     }
     
     h1 {
-        width: 40%;
-        margin: 0px; 
+        width: 50%;
         font-size: 40px;
         font-weight: 700;
-    }
-
-    .button-container {
-        display: none;
+        text-align: start;
     }
 
     .button-container:hover {

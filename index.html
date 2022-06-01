@@ -9,17 +9,35 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <header>
-        <nav data-aos="zoom-in" data-aos-duration="2000">
+    <!-- <header>
+        <input class="check" type="checkbox" name="" id="menu">
+        <label for="menu">
+            <div class="icon-menu"></div>
+        </label>
+        <nav data-aos="zoom-in" data-aos-duration="2000" class="menu-nav">
             <button><a href="#about-me">Sobre mí</a></button>
             <button><a href="#proyects">Proyectos</a> </button>
             <button><a href="#contact">Contacto</a> </button> 
         </nav>
+    </header> -->
+    <header class="header">
+        <input class="check" type="checkbox" name="" id="menu">
+        <label for="menu">
+            <div class="icon-menu"></div>
+        </label>
+        <nav class="menu-nav">
+            <ul>
+                <li class="list-item"><a href="#about-me">SOBRE MÍ</a></li>
+                <li class="list-item"><a href="#projects">PROYECTOS</a></li>
+                <li class="list-item"><a href="#contact">CONTACTO</a></li>
+                
+            </ul>
+        </nav>
     </header>
     <main>
             <div class="title-container">
-                <img data-aos="zoom-in" data-aos-duration="2000" src="./public/images/DSC03753.JPG" alt="">
-                <h1 data-aos="zoom-in" data-aos-duration="3500"><span>Hola! <br> </span> Soy Maxi ! un jóven y autodidacta programador web.</h1>       
+                <img data-aos="zoom-in" data-aos-duration="2000" src="./public/images/DSC03753.JPG" alt=""> 
+                <h1><span>Hola!</span> <br> Soy Maxi! Un jóven y autodidacta programador web.</h1>     
             </div>
         <section class="about-me" id="about-me">
             <div data-aos="fade-right" class="hobbie">
@@ -73,7 +91,7 @@
                 </div>
             </div>
         </section>
-        <section class="proyects-container" id="proyects">
+        <section class="proyects-container" id="projects">
             <div data-aos="fade-right" class="proyect">
                 <img src="./public/images/podcast.jpg" alt="imagen de proyecto"></img>
                 <div class="proyect-info">
