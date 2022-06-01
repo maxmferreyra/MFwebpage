@@ -428,23 +428,6 @@ footer p span {
     margin-top: 0.3em;
    }
 
-   .button:hover {
-       background-color: #f7444e;
-   }
-
-   .button:hover p {
-       visibility: hidden;
-   }
-   
-   .button:hover .icon img {
-    transform: rotate(360deg);
-   }
-   
-   .button:hover .icon {
-    width: calc(100% - 0.5rem);
-    border-radius: 0.5em;
-   }
-
 
 
 @media screen and (min-width: 960px) {
