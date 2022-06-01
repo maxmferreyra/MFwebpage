@@ -146,7 +146,7 @@ main {
 .title-container img {
     margin-top: 40px;
     width: 43%;
-    height: 40vh;
+    height: 35vh;
     border-radius: 50% 50% 49% 51% / 60% 34% 66% 40% ;
     background: rgba(255, 255, 255, 0.3);
 }
