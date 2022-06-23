@@ -515,26 +515,20 @@ footer p span {
         justify-content: space-evenly;
         flex-wrap: wrap;    
         height: 90vh;
-    }
-    
-    .title-container span {
-        font-size: 60px;
-        color: #002c3e;
-    }
-
-    .title-container img {
-        width: 25%;
-        height: 60vh;
-        margin: 0px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        padding-left: 120px;
     }
     
     h1 {
         width: 50%;
-        font-size: 40px;
+        font-size: 4rem;
         font-weight: 700;
         text-align: start;
     }
+
+    .title-container span {
+            font-size: 3.5rem;
+            color: #002c3e;
+        }
 
     .button-container:hover {
         box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
