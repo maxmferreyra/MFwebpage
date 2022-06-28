@@ -62,12 +62,13 @@ label {
 .menu-nav {
     background-color: #002c3e;
     height: 0px;
-    transition: all 0.4s ease-in-outs 0s;
+    transition: all 0.4s ease-in-outs 2s;
     overflow: hidden;
     position: absolute;
     top: 51px;
     left: 0;
     z-index: 1;
+  
 }
 
 .check {
@@ -133,34 +134,26 @@ main {
 
 
 .title-container {
-    background-color: #53a7ea;
+    background-image: url('public/images/sun-tornado.svg');
+    background-size: cover;
     width: 100%;
-    margin: 0px auto;
     height: 520px;
-    padding: 30px 0px 0px 20px;
+    padding: 60px 0px 0px 40px;
 }
 
-.title-container img {
-   /*  margin-top: 40px;
-    width: 43%;
-    height: 35vh;
-    border-radius: 50% 50% 49% 51% / 60% 34% 66% 40% ;
-    background: rgba(255, 255, 255, 0.3); */
-    display: none;
-}
 
 h1 {
     color: #f7f8f3;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     margin: 40px 0px 15px 0px;
-    width: 80%;
+    width: 90%;
    
 }
 
 .title-container span {
-    color: #353535;
-    font-size: 1.5rem;
+    color: #002c3e;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 
@@ -194,8 +187,8 @@ h1 {
 
 .hobbie p {
     color: white;
-    font-size: 13px;
-    padding-left: 20px;
+    font-size: 11px;
+    padding-left: 10px;
 }
 
 .tools-container {
@@ -204,7 +197,7 @@ h1 {
     justify-content: space-around;
     align-items: center;
     width: 80%;
-    margin: 20px auto;
+    margin: 20px auto 50px auto;
     padding-top: 40px;
 }
 
@@ -222,13 +215,10 @@ h1 {
 }
 
 .cardTool h3 {
-    padding-top: 5px;
     height: 5vh;
     margin: 0 auto;
-    background-color: #2CA0D9;
-    font-size: 1rem;
+    font-size: 15px;
     width: 80%;
-    border-radius: 10px;
     font-weight: 500;
     color: #ffffff;
     text-transform: uppercase;
@@ -262,7 +252,7 @@ h1 {
     justify-content: center;
     align-items: center;
     transition: transform 1s ease-out;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -284,14 +274,14 @@ h1 {
 .proyect h3 {
     font-size: 1rem;
     text-align: center;
-    padding: 20px;
+    padding: 30px 0px 5px 0px;
     color: white;
 }
 
 .proyect p {
     font-size: 15px;
     line-height: 32px;
-    padding: 40px 0px;
+    padding: 20px 0px;
     width: 250px;
     font-weight: 300;
     text-align: center;
@@ -535,19 +525,27 @@ footer p span {
         transform: translateX(3px);
     }
 
+    .about-me {
+        height: 60vh;
+        margin: 0;
+        width: 60%;
+        margin: 60px 0px 30px 0px;
+    }
+
     .hobbie {
-        width: 50%;
-        height: 13vh;
+        height: 11vh;
+        width: 44%;
     }
     
     .hobbie img {
-        width: 12%;
-        height: 12vh;
+        width: 20%;
+        height: 10vh;
+        padding: 3px;
     }
     
     .hobbie p {
-        font-size: 18px;
-        padding-left: 45px;
+        font-size: 14px;
+        padding-left: 40px;
     }
 
 
@@ -565,6 +563,11 @@ footer p span {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .cardTool h3 {
+        font-size: 17px;
+        border-bottom: 3px solid #2CA0D9; 
     }
 
     .tools img {
